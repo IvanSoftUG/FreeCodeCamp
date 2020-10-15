@@ -1,0 +1,68 @@
+<div class="container">
+	<header class="header">
+		<h1 id="title" class="text-center">Responsive Web Design</h1>
+		<p id="description" class="description text-center">
+			This is an example of a survey form
+		</p>
+	</header>
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Name</label>
+			<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+		</div>
+		<div class="form-group">
+			<label id="email-label" for="email">Email</label>
+			<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+		</div>
+		<div class="form-group">
+			<label id="number-label" for="age">Age <span class="clue">(optional)</span></label>
+			<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+		</div>
+		<div class="form-group">
+			<label id="dropdown-label" name="occupation">Occupation</label>
+			<select id="dropdown" name="occupation"  class="form-control" required/>
+			<option disabled selected value>Select current occupation</option>
+        <option value="student">Student</option>
+        <option value="web">Web Design</option>
+        <option value="teacher">Teacher</option>
+        <option value="Software">Software Development</option>
+        <option value="other">Other</option>
+			</select>
+		</div>
+		<div>
+			<p>Would you consider yourself a:</p>
+			<label>
+				<input name="level" value="beginner" type="radio" class="input-radio" checked/>Begginer</label>
+			<label>
+				<input name="level" value="advanced" type="radio" class="input-radio"/>Advanced</label>
+			<label>
+				<input name="level" value="expert" type="radio" class="input-radio"/>Expert</label>
+		</div>
+		<div>
+			<p>Which topics/skills would you like to learn about?<span class="clue">(Check all that apply)</span></p>
+			<label>
+				<input name="topic/skill" value="HTML" type="checkbox" class="input-checkbox"/>HTML</label>
+			<label>
+				<input name="topic/skill" value="CSS" type="checkbox" class="input-checkbox"/>CSS</label>
+			<label>
+				<input name="topic/skill" value="JS" type="checkbox" class="input-checkbox"/>JS</label>
+			<label>
+				<input name="topic/skill" value="Structures" type="checkbox" class="input-checkbox"/>Data Structures</label>
+			<label>
+				<input name="topic/skill" value="Algorithms" type="checkbox" class="input-checkbox"/>Algorithms</label>
+			<label>
+				<input name="topic/skill" value="Front-end" type="checkbox" class="input-checkbox"/>Front-end</label>
+			<label>
+				<input name="topic/skill" value="Back-end" type="checkbox" class="input-checkbox"/>Back-end</label>
+			<label>
+				<input name="topic/skill" value="Other" type="checkbox" class="input-checkbox"/>Other</label>
+			<p>Please specify:</p>
+			<textarea id="specify" class="input-textarea" name="topic/skill" placeholder="Enter your preferred topics or skills here"></textarea>
+		</div>
+		<div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+		</div>
+	</form>
+</div>
