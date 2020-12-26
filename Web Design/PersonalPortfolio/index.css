@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(225deg, #303841, #00adb5, #eeeeee, #ff5722);
+  color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2d4059, #ea5455, #f07b3f, #ffd460);
+}
