@@ -1,3 +1,17 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
   background: linear-gradient(225deg, #303841, #00adb5, #eeeeee, #ff5722);
   color: white;
@@ -10,4 +24,5 @@ body {
 .container {
   border-radius: 8px;
   background: linear-gradient(90deg, #2d4059, #ea5455, #f07b3f, #ffd460);
+  animation: bounceIn 5s;
 }
