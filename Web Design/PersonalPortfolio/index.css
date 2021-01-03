@@ -30,6 +30,10 @@ body {
   visibility: visible;
 }
 
+img {
+  width: 50%;
+}
+
 .container {
   border-radius: 8px;
   background: linear-gradient(90deg, #2d4059, #ea5455, #f07b3f, #ffd460);
