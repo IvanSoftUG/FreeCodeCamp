@@ -1,4 +1,7 @@
 @keyframes bounceIn {
+  to {
+    visibility: visible;
+  }
   0% {
     transform: scale(0.1);
     opacity: 0;
@@ -21,8 +24,36 @@ body {
   text-align: center;
 }
 
+#puzzle {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2d4059, #ea5455, #f07b3f, #ffd460);
+  visibility: visible;
+}
+
 .container {
   border-radius: 8px;
   background: linear-gradient(90deg, #2d4059, #ea5455, #f07b3f, #ffd460);
+  visibility: hidden;
   animation: bounceIn 5s;
+  animation-fill-mode: forwards;
+}
+
+#skills {
+  animation-delay: 0s;
+}
+
+#projects {
+  animation-delay: 5s;
+}
+
+#certifications {
+  animation-delay: 10s;
+}
+
+#about {
+  animation-delay: 15s;
+}
+
+#contact {
+  animation-delay: 20s;
 }
